@@ -16,7 +16,12 @@ class CustomerFactory extends Factory
      */
     public function definition()
     {
+        // randomElement() is a Faker method which returns a random element from an array
         $type = $this->faker->randomElement(['I', 'B']);
+        /**
+         * If the type is 'I', then use the name() method to generate a name.
+         * Otherwise, use the company() method to generate a company name.
+         */
         $name = $type == 'I' ? $this->faker->name() : $this->faker->company();
 
         return [

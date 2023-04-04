@@ -4,8 +4,6 @@ namespace App\Http\Requests\V1;
 
 use Illuminate\Validation\Rule;
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Contracts\Validation\Validator;
-use Illuminate\Http\Exceptions\HttpResponseException;
 
 class StoreCustomerRequest extends FormRequest
 {

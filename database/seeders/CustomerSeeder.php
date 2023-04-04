@@ -15,6 +15,7 @@ class CustomerSeeder extends Seeder
      */
     public function run()
     {
+        // hasInvoices is a magic method that creates 10 invoices for each customer
         Customer::factory()->count(25)->hasInvoices(10)->create();
         Customer::factory()->count(100)->hasInvoices(5)->create();
         Customer::factory()->count(100)->hasInvoices(3)->create();
